@@ -1,0 +1,36 @@
+<mvc:View controllerName="com.newtiles.Znewtilesovp.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<GenericTile id="SCM" header="Global Procuremant and supply chain Management" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							headerImage="sap-icon://supplier" press="onScm">
+							<tileContent>
+								<TileContent footer="SCM App Overview"></TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile id="Human" header="Human Resource" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://hr-approval"
+							press="onHuman">
+							<tileContent>
+								<TileContent footer="Overview of Human Resource"></TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile id="Sap" header="Sap Internal" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://sap-logo-shape"
+							press="onSap">
+							<tileContent>
+								<TileContent footer="OverView of Sap Internal"></TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile id="help" header="Help" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							headerImage="sap-icon://sys-help-2" press="onHelp">
+							<tileContent>
+								<TileContent footer="Help"></TileContent>
+							</tileContent>
+						</GenericTile>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

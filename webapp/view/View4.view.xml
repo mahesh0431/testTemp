@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.newtiles.Znewtilesovp.controller.View4">
+	<App>
+		<pages>
+			<Page title="SAP Internal Apps" navButtonPress="onNavBack" showNavButton="true">
+				<content>
+				    <Carousel xmlns="sap.m" id="carousel1">
+				        <pages>
+				            <VBox id="vbox2">
+				                <Text text="Page 1"/>
+				                <Table id="idSupplierAddressInfo_Table" items="{/scmAppCollection}" mode="MultiSelect">
+							<columns>
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+									<ObjectIdentifier title="Header"/>
+								</Column>
+								
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" mergeDuplicates="true">
+									<ObjectIdentifier title="Image"/>
+								</Column>
+								<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center" mergeDuplicates="true">
+									<ObjectIdentifier title="PlaceHolderText"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem id="listItem" type="Active">
+									<cells>
+										<ObjectIdentifier text="{Heading}"/>
+										<ObjectIdentifier text="{AppPicUrl}"/>
+										<ObjectIdentifier text="{PlaceHolderText}"/>
+										
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+				                
+				            </VBox>
+				            <VBox id="vbox3">
+				                <Text text="Page 2"/>
+				               
+				                
+				            </VBox>
+				            </pages>
+				        
+				    </Carousel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

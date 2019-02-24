@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f" xmlns:cards="sap.f.cards"
+	xmlns:html="http://www.w3.org/1999/xhtml" controllerName="com.newtiles.Znewtilesovp.controller.view2">
+	<Page title="SCM apps" navButtonPress="onNavBack" showNavButton="true" class="sapUiResponsiveContentPadding">
+		<content>
+			<Carousel xmlns="sap.m" id="carousel0" height="auto" showPageIndicator="true" pages="{path : 'test>/scmAppCollection'}">
+				<!--  	<customLayout>-->
+				<!--	<CarouselLayout visiblePagesCount="2" />-->
+				<!--</customLayout>-->
+				<f:Card>
+					<f:header>
+						<cards:Header title="{test>Heading}" subtitle="{test>Description}" iconSrc="{test>AppPicUrl}" iconDisplayShape="Square"/>
+					</f:header>
+					<f:content>
+						<VBox class="sapUiSmallMargin">
+							<HBox>
+								<Label text="Description About App" class="sapUiTinyMarginEnd"/>
+								<Text text="{test>PlaceHolderText}"/>
+							</HBox>
+						</VBox>
+					</f:content>
+				</f:Card>
+			</Carousel>
+		</content>
+	</Page>
+</mvc:View>

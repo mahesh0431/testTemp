@@ -1,0 +1,20 @@
+{
+	"scmAppCollection": [{
+		"Heading": "Goods Receipt app",
+		"AppPicUrl": "./image/sap-scm-mini-logo.jpg",
+		"PlaceHolderText": "This app allows the user to do GR posting against Purchase Order and Outbound delivery. You can search for PR/PO information from initial screen. This app allows you to do full receipts and partial receipt based on business needs."
+
+	}, {
+		"Heading": "Order Status app",
+		"AppPicUrl": "./image/sap-scm-mini-logo.jpg",
+		"PlaceHolderText": "Order Status app serves as a lookup tool for users and allows them to view and verify Purchase Order Information in SAP."
+	}, {
+		"Heading": "My Inbox app",
+		"AppPicUrl": "./image/sap-scm-mini-logo.jpg",
+		"PlaceHolderText": "NA"
+	}, {
+		"Heading": "Purchase Requisition app",
+		"AppPicUrl": "./image/sap-scm-mini-logo.jpg",
+		"PlaceHolderText": "This app allows user to approve the Purchase Requisitions."
+	}]
+}

@@ -1,0 +1,40 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="com.newtiles.Znewtilesovp.controller.View3" xmlns:f="sap.f" xmlns:cards="sap.f.cards">
+	
+		
+			<Page title="HR apps" navButtonPress="onNavBack" showNavButton="true">
+				<content>
+					<Carousel xmlns="sap.m" id="carousel0">
+						
+							<VBox id="vbox0">
+								<Text text="Timesheet Entry App"/>
+								<Image src="./image/timesheet.jpg" height="30%" width="20%"/>
+								<Text xmlns="sap.m" text="Used to achieve time sheet entry capture and get approval." id="text2"/>
+								<f:Card>
+									<f:header>
+										<cards:Header title="{Name}" subtitle="{Description}" iconSrc="{ProductPicUrl}" iconDisplayShape="Square"/>
+									</f:header>
+									<f:content>
+										<VBox class="sapUiSmallMargin">
+											<HBox>
+												<Label text="Supplier" class="sapUiTinyMarginEnd"/>
+												<Text text="{SupplierName}"/>
+											</HBox>
+											<HBox>
+												<Label text="Status" class="sapUiTinyMarginEnd"/>
+												<Text text="{Status}"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+							</VBox>
+							<VBox id="vbox1">
+								<Text text="Page 2"/>
+							</VBox>
+						
+					</Carousel>
+				</content>
+			</Page>
+	
+
+</mvc:View>

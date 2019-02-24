@@ -1,0 +1,129 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "com.newtiles.Znewtilesovp",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.newtiles.Znewtilesovp.view.View1",
+			"type": "XML",
+			"async": true,
+			"id": "View1"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.newtiles.Znewtilesovp.i18n.i18n"
+				}
+			},
+			"test": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "./mockdata/scmapp.json",
+				"preload": true
+			},
+			"test1": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"uri": "./mockdata/products.json",
+				"preload": false
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.newtiles.Znewtilesovp.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "View1",
+				"target": "View1"
+			}, {
+				"pattern": "view2",
+				"name": "view2",
+				"target": "view2"
+			}, {
+				"pattern": "View3",
+				"name": "View3",
+				"target": "View3"
+			}, {
+				"pattern": "View4",
+				"name": "View4",
+				"target": "View4"
+			}, {
+				"pattern": "View5",
+				"name": "View5",
+				"target": "View5"
+			}],
+			"targets": {
+				"View1": {
+					"viewName": "View1"
+				},
+				"view2": {
+					"viewName": "view2"
+				},
+				"View3": {
+					"viewType": "XML",
+					"viewName": "View3"
+				},
+				"View4": {
+					"viewType": "XML",
+					"viewName": "View4"
+				},
+				"View5": {
+					"viewType": "XML",
+					"viewName": "View5"
+				}
+			}
+		}
+	}
+}
